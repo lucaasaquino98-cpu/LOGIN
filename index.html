@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGIN</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"> 
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Verdana, sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    /* Centralização */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(120deg, #6a11cb, #2575fc);
+    }
+
+    /* Container */
+    main {
+      background: rgba(255, 255, 255, 0.2); /* Transparência */
+      backdrop-filter: blur(10px); /* Desfoque elegante atrás */
+      padding: 30px;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 350px;
+      box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.3); /* Borda suave */
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #fff; /* Melhor contraste com fundo transparente */
+    }
+
+    /* Inputs */
+    .input-box {
+      position: relative;
+      margin: 15px 0;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 12px 40px 12px 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      font-size: 14px;
+      background: rgba(255,255,255,0.5); /* Fundo semi-transparente para input */
+      color: #000;
+    }
+
+    .input-box i {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 18px;
+      color: #666;
+    }
+
+    /* Lembrar senha + link */
+    .remember-forgot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      margin: 10px 0 20px;
+      color: #fff;
+    }
+
+    .remember-forgot a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .remember-forgot a:hover {
+      text-decoration: underline;
+    }
+
+    /* Botão */
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.03);
+      background: linear-gradient(45deg, #2575fc, #6a11cb);
+    }
+
+    /* Cadastro */
+    .register-link {
+      margin-top: 15px;
+      font-size: 14px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .register-link a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .register-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <form>
+      <h1>Login</h1>
+
+      <div class="input-box">
+        <input type="email" placeholder="Usuário" required>
+        <i class="bx bxs-user"></i>
+      </div>
+
+      <div class="input-box">
+        <input type="password" placeholder="Senha" required>
+        <i class="bx bxs-lock-alt"></i>
+      </div>
+
+      <div class="remember-forgot">
+        <label>
+          <input type="checkbox"> Lembrar minha senha
+        </label>
+        <a href="#">Esqueci minha senha</a>
+      </div>
+
+      <button type="submit">Login</button>
+
+      <div class="register-link">
+        <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
